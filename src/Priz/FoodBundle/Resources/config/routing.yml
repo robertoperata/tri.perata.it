@@ -1,0 +1,10 @@
+
+priz_food_inser_ingredient:
+    path:   /food/ingredient/new
+    defaults:   { _controller: PrizFoodBundle:Recipe:insertIngredient}
+
+priz_food_ingredient_success:
+    path:   /food/ingredient/success
+    defaults:   { _controller: PrizFoodBundle:Recipe:insertIngredientSuccess}
+
+

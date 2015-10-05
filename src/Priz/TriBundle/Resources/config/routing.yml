@@ -1,0 +1,11 @@
+priz_tri_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PrizTriBundle:Default:index }
+
+priz_tri_dashboard:
+    path:       /dashboard
+    defaults: { _controller: PrizTriBundle:Default:dashboard}
+
+priz_tri_create_ATP:
+    path:       /createATP
+    defaults: { _controller: PrizTriBundle:Default:createATP}

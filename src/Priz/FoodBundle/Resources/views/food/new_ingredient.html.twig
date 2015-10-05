@@ -1,0 +1,21 @@
+{% include 'PrizFoodBundle::base.html.twig' %}
+
+{% block body %}
+    {% for role in app.user.roles %}
+        {{ role }}
+    {% endfor %}
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+
+
+    <ul>
+        {% for r in form.ingredients %}
+            <li>
+                {{ form_widget(r) }}
+                {{ form_label(r) }}
+            </li>
+        {% endfor %}
+    </ul>
+    {{ form_end(form) }}
+{% endblock %}
